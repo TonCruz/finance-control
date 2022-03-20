@@ -16,6 +16,19 @@ body {
   font-family: 'Poppins';
 }
 
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+
 .container {
   width: min(90vw, 800px);
   margin: auto;
@@ -37,11 +50,6 @@ header {
   background: var(--main-color);
   padding: 2rem 0 10rem;
   text-align: center;
-}
-
-#logo {
-  color: #fff;
-  font-weight: 100;
 }
 
 /*  =======  BALANCE ==========  */
@@ -68,6 +76,10 @@ header {
 .card h3 {
   font-weight: normal;
   font-size: 1rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .card p {
